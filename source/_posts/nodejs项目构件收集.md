@@ -7,17 +7,18 @@ tags:
 
 ## 构建系统
     $ npm install gulp
-    $ 
 
 ## 包管理器
-    $ npm install bower -g
+    $ npm install webpack -g
+    $ npm install css-loader style-loader 
+    $ npm install --save-dev webpack-livereload-plugin
 
 ## 开发框架
     $ npm install koa
     $ npm install angular
 
 ## 测试库
-    $ npm install -g mocha
+    $ npm install mocha -g 
 
 ## 数据库
     $ npm install mongoose
