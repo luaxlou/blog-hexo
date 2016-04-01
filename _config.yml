@@ -4,7 +4,7 @@
 
 # Site
 title: Good morning,John!
-subtitle: Now,He will be a nodejs Programmer.
+subtitle: He will be an nodejs Programmer then.
 description: John is an Programmer.nodejs ruby php objective-c java project-management
 author: John Lou
 language: cn
@@ -71,21 +71,7 @@ deploy:
   type: git
   repo: https://github.com/luaxlou/luaxlou.github.io.git
 
-html_minifier:
-  enable: true
-  exclude: 
-css_minifier:
-  enable: true
-  exclude: 
-    - '*.min.css'
-
-js_minifier:
-  enable: true
-  mangle: true
-  output:
-  compress: 
-  exclude: 
-    - '*.min.js'
+# min
 
 
 # image_minifier:
