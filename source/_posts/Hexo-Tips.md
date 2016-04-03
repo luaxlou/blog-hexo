@@ -3,17 +3,34 @@ title: Hexo Tips
 tags:
     - hexo
 ---
-
-
-## install
-    $ npm install hexo-cli -g
-
 [Hexo](https://hexo.io/)能有更好的写作体验.
-
 
 ``` ruby
 p 'Hello Hexo!!!!!!!!!'
 ```
+
+### install
+``` bash
+$ npm install hexo-cli -g
+```
+
+
+### deploy
+``` shell
+# ./d.sh
+hexo g
+hexo p
+```
+
+### 多地写博客
+push to github
+``` shell
+# ./p.sh
+git add --all
+git commit -am 'new post'
+git push
+```
+
 
 
 more info:[Hexo](https://hexo.io/)

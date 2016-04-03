@@ -1,2 +1,3 @@
-hexo g
-hexo d
+git add --all
+git commit -am 'new post'
+git push
