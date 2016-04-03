@@ -7,9 +7,9 @@ tags:
 
 ## 构建系统
 ``` shell
-    $ npm install webpack -g
-    $ npm install css-loader style-loader 
-    $ npm install --save-dev browser-sync-webpack-plugin
+$ npm install webpack -g
+$ npm install css-loader style-loader 
+$ npm install --save-dev browser-sync-webpack-plugin
 ```
 ### webpack.config.js:
 ``` js
@@ -43,20 +43,20 @@ module.exports = {
 
 ## 开发框架
 ``` bash
-    $ npm install koa
-    $ npm install angular
+$ npm install koa
+$ npm install angular
 ```
 ## 测试库
 ``` bash
-    $ npm install mocha -g 
+$ npm install mocha -g 
 ```
 ## 数据库
 ``` bash
-    $ npm install mongoose
+$ npm install mongoose
 ```
 ## 生产环境
 ### 进程管理器
 
 ``` bash
-    $ npm install -g pm2
+$ npm install -g pm2
 ```
