@@ -1,8 +1,12 @@
 ---
-title: 从jekyll到Hexo
+title: Hexo Tips
 tags:
     - hexo
 ---
+
+
+## install
+    $ npm install hexo-cli -g
 
 [Hexo](https://hexo.io/)能有更好的写作体验.
 
@@ -14,7 +18,7 @@ p 'Hello Hexo!!!!!!!!!'
 
 more info:[Hexo](https://hexo.io/)
 
-
+<!--more-->
 
 ***
 

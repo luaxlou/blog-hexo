@@ -20,6 +20,7 @@ command + Q,重启sublime
 - command + shift + p ,RTX热键冲突,关闭
 - command + shift + p, Install Package
     + MarkdownEditing
+    + JsFormat
 - 打开VI模式
 Preferences > Setting > User
 ``` json
