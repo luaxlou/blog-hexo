@@ -8,9 +8,16 @@ tags:
 ## 构建系统
 ``` shell
 $ npm install webpack -g
-$ npm install css-loader style-loader 
-$ npm install --save-dev browser-sync-webpack-plugin
+$ npm install css-loader style-loader
+$ npm install browser-sync-webpack-plugin --save-dev
+$ npm install react --save-dev
+$ npm install babel-core babel-loader --save-dev
+$ npm install babel-preset-react --save-dev
 ```
+
+<!--more-->
+
+
 ### webpack.config.js:
 ``` js
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
@@ -25,6 +32,13 @@ module.exports = {
     loaders: [{
       test: /\.css$/,
       loader: "style!css"
+    }, {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: "babel",
+      query: {
+        presets: ['react']
+      }
     }]
   },
   plugins: [
@@ -39,13 +53,11 @@ module.exports = {
 };
 ```
 
-<!--more-->
-
-## 开发框架
 ``` bash
-$ npm install koa
-$ npm install angular
+$ webpack --watch
 ```
+
+
 ## 测试库
 ``` bash
 $ npm install mocha -g 

@@ -7,3 +7,4 @@ tags:
 
 ## 资料
 - [Webpack 中文指南](https://zhaoda.gitbooks.io/webpack/content/)
+- [Reactjs 中文文档](http://reactjs.cn/)
