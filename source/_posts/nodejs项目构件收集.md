@@ -2,17 +2,17 @@
 title: Nodejs项目构件收集
 date: 2016-03-29 15:27:02
 tags:
-    - nodejs
+    - nodejs webpack babel react es6
 ---
 
 ## 构建系统
-``` shell
-$ npm install webpack -g
-$ npm install css-loader style-loader
-$ npm install browser-sync-webpack-plugin --save-dev
-$ npm install react --save-dev
-$ npm install babel-core babel-loader --save-dev
-$ npm install babel-preset-react --save-dev
+``` bash
+$ npm i webpack -g
+$ npm i css-loader style-loader -D
+$ npm i browser-sync-webpack-plugin -D
+$ npm i react -D
+$ npm i babel-core babel-loader -D
+$ npm i babel-preset-es2015 babel-preset-react -D
 ```
 
 <!--more-->
@@ -37,7 +37,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: "babel",
       query: {
-        presets: ['react']
+        presets: ['es2015', 'react']
       }
     }]
   },
@@ -60,15 +60,15 @@ $ webpack --watch
 
 ## 测试库
 ``` bash
-$ npm install mocha -g 
+$ npm i mocha -g 
 ```
 ## 数据库
 ``` bash
-$ npm install mongoose
+$ npm i mongoose
 ```
 ## 生产环境
 ### 进程管理器
 
 ``` bash
-$ npm install -g pm2
+$ npm i -g pm2
 ```
