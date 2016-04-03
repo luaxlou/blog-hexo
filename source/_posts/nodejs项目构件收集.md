@@ -2,7 +2,11 @@
 title: Nodejs项目构件收集
 date: 2016-03-29 15:27:02
 tags:
-    - nodejs webpack babel react es6
+    - nodejs 
+    - webpack 
+    - babel 
+    - react 
+    - es6
 ---
 
 ## 构建系统
