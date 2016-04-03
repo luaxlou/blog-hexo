@@ -2,7 +2,7 @@
 title: Sublime Text 3 Develop Tips
 date: 2016-03-31 12:07:33
 tags:
-	-Sublime Text 3
+	- Sublime Text 3
 ---
 
 - [Install Package ](https://packagecontrol.io/installation)

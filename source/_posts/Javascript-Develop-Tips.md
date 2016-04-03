@@ -2,7 +2,7 @@
 title: Javascript Develop Tips
 date: 2016-04-02 22:33:43
 tags:
-    -Javascript
+    - Javascript
 ---
 ## ES6
 ### 新语法
