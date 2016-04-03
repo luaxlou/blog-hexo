@@ -17,6 +17,23 @@ $ npm i babel-preset-es2015 babel-preset-react -D
 
 <!--more-->
 
+lastest:
+
+``` json
+{
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "browser-sync": "^2.11.2",
+    "browser-sync-webpack-plugin": "^1.0.1",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
+```
+
+
+
 
 ### webpack.config.js:
 ``` js
