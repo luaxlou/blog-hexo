@@ -1,5 +1,5 @@
 ---
-title: Nodejs项目构件收集
+title: React Project Tips
 date: 2016-03-29 15:27:02
 tags:
     - nodejs 
@@ -9,7 +9,7 @@ tags:
     - es6
 ---
 
-## 构建系统
+## install packages
 ``` bash
 $ npm i webpack -g
 $ npm i css-loader style-loader -D
@@ -21,7 +21,7 @@ $ npm i babel-preset-es2015 babel-preset-react -D
 
 <!--more-->
 
-lastest:
+### lastest:
 
 ``` json
 {
@@ -74,22 +74,11 @@ module.exports = {
 };
 ```
 
+### run with live reload
+
 ``` bash
 $ webpack --watch
 ```
 
 
-## 测试库
-``` bash
-$ npm i mocha -g 
-```
-## 数据库
-``` bash
-$ npm i mongoose
-```
-## 生产环境
-### 进程管理器
-
-``` bash
-$ npm i -g pm2
-```
+to be continued
