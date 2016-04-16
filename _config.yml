@@ -82,5 +82,5 @@ deploy:
 #   pngquant: false
 #   progressive: false
 plugins:
-- hexo-generator-feed
+#- hexo-generator-feed
 #- hexo-generator-sitemap
