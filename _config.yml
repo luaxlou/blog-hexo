@@ -81,6 +81,12 @@ deploy:
 #   optimizationLevel: 1
 #   pngquant: false
 #   progressive: false
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+
 plugins:
 #- hexo-generator-feed
 #- hexo-generator-sitemap
