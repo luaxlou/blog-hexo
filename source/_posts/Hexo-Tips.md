@@ -31,7 +31,19 @@ git commit -am 'new post'
 git push
 ```
 
+### rss生成,sitemap生成
+``` shell
+npm install hexo-generator-feed
+npm install hexo-generator-sitemap
+```
 
+_config.xml
+
+``` 
+plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+```
 
 more info:[Hexo](https://hexo.io/)
 

@@ -17,6 +17,9 @@ $ npm i browser-sync-webpack-plugin -D
 $ npm i react -D
 $ npm i babel-core babel-loader -D
 $ npm i babel-preset-es2015 babel-preset-react -D
+
+$ npm i mongoose -D
+$ npm i commander -D
 ```
 
 <!--more-->
@@ -77,7 +80,7 @@ module.exports = {
 ### run with live reload
 
 ``` bash
-$ webpack --watch
+$ webpack -w
 ```
 
 
