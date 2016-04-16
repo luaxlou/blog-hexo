@@ -83,4 +83,4 @@ deploy:
 #   progressive: false
 plugins:
 - hexo-generator-feed
-- hexo-generator-sitemap
+#- hexo-generator-sitemap
