@@ -82,11 +82,6 @@ deploy:
 #   pngquant: false
 #   progressive: false
 feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-
-
-plugins:
-#- hexo-generator-feed
-#- hexo-generator-sitemap
+  type: atom       #feed 类型 (atom/rss2)
+  path: atom.xml   #rss 路径
+  limit: 20 
