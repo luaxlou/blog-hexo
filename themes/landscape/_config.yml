@@ -1,8 +1,9 @@
 # Header
 menu:
   Home: /
+  Node Resource Search: http://www.tomatoframework.com
   Archives: /archives
-rss: /atom.xml
+  rss: /atom.xml
 
 # Content
 excerpt_link: Read More
@@ -16,6 +17,7 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
