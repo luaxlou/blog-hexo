@@ -12,7 +12,8 @@ Lastest: React Native v0.22,Xcode 7.2.1
 - [React Native学习指南](https://github.com/ele828/react-native-guide)
 - [React/React Native 的ES5 ES6写法对照表](http://bbs.reactnative.cn/topic/15/react-react-native-%E7%9A%84es5-es6%E5%86%99%E6%B3%95%E5%AF%B9%E7%85%A7%E8%A1%A8)
 - [构建 Facebook F8 2016 App / React Native 开发指南](http://f8-app.liaohuqiu.net/)
-- [redux 英文文档](http://redux.js.org/)
+- [Redux 英文文档](http://redux.js.org/)
+- [Redux 中文文档](http://camsong.github.io/redux-in-chinese/)
 
 
 <!--more-->
