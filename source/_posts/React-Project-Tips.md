@@ -2,12 +2,35 @@
 title: React Project Tips
 date: 2016-03-29 15:27:02
 tags:
-    - node.js 
+    - node.js
     - webpack
     - babel
     - react
     - es6
 ---
+
+此文为[Node Resource Search项目](https://github.com/luaxlou/NodeSearch.git)的开发历程
+
+开发思路,这个跟作者的性格有关,作者不喜欢做一些重复的工作,所有能不依赖人工的就不依赖人工.
+
+他会订阅一些开放的优质资源,可能会使用以下的方式:
+- RSS订阅
+- 内容抓取
+
+
+<!--more-->
+
+
+记录开发过程中,所经历的技术选型,以及一些关键点的考虑.
+
+##项目中要解决的问题:
+- build管理
+- Livereload
+- 使用ES6语法
+- 移动端使用场景
+- 管理内容订阅,标签管理等
+
+
 
 ## install packages
 ``` bash
