@@ -11,7 +11,7 @@ tags:
 
 此文为[Node Resource Search项目](https://github.com/luaxlou/NodeSearch.git)的开发历程
 
-开发思路,这个跟作者的性格有关,作者不喜欢做一些重复的工作,所有能不依赖人工的就不依赖人工.
+开发思路,这个跟作者的性格有关,作者不喜欢做一些重复的工作,所有能不依赖人工的就不依赖人工,能简单的绝对不复杂.
 
 他会订阅一些开放的优质资源,可能会使用以下的方式:
 - RSS订阅
@@ -33,33 +33,44 @@ tags:
 
 
 ## install packages
-``` bash
-$ npm i webpack -g
-$ npm i css-loader style-loader -D
-$ npm i browser-sync-webpack-plugin -D
-$ npm i react -D
-$ npm i babel-core babel-loader -D
-$ npm i babel-preset-es2015 babel-preset-react -D
 
-$ npm i mongoose -D
-$ npm i commander -D
-```
+### client
 
-<!--more-->
-
-### lastest:
 
 ``` json
 {
-    "babel-core": "^6.7.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "browser-sync": "^2.11.2",
-    "browser-sync-webpack-plugin": "^1.0.1",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8"
+  "babel-core": "^6.7.4",
+  "babel-loader": "^6.2.4",
+  "babel-preset-es2015": "^6.6.0",
+  "babel-preset-react": "^6.5.0",
+  "browser-sync": "^2.11.2",
+  "browser-sync-webpack-plugin": "^1.0.1",
+  "react": "^0.14.8",
+  "react-dom": "^0.14.8"
   }
+```
+
+### server
+
+``` json
+{
+    "commander": "^2.9.0",
+    "koa": "^1.2.0",
+    "koa-jsonp": "^0.2.0",
+    "koa-route": "^2.4.2",
+    "koa-router": "^5.4.0",
+    "md5": "^2.1.0",
+    "mongoose": "^4.4.11",
+    "parse-rss": "^1.0.3",
+    "promise": "^7.1.1",
+    "redis": "^2.6.0-1",
+    "rss-parser": "^2.2.4",
+    "schedule": "^0.1.0",
+    "sendmail": "^0.2.1",
+    "koa-body": "^1.4.0"
+}
+
+
 ```
 
 
