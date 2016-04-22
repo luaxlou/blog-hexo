@@ -16,6 +16,7 @@ Lastest: React Native v0.23.1,Atom v1.7.2,Nuclide v0.131.0
 apm install nuclide --verbose
 
 <!--more-->
+
 - flow 无法启动
 ``` shell
 $ brew upgrade flow
