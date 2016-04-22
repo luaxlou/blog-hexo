@@ -17,24 +17,7 @@ Lastest: React Native v0.22,Xcode 7.2.1
 
 
 <!--more-->
-
-## IDE
-### Atom+Nuclide 环境安装
-- Github上选择最新的发布版本,不要选择官网的下载链接
-(https://github.com/atom/atom/releases)
-- 安装Nuclide插件,使用APM安装,cross wall
-apm install nuclide --verbose
-- flow 无法启动
-``` shell
-$ brew upgrade flow
-```
-根目录下运行flow看看
-``` shell
-$ flow
-.flowconfig:91 Wrong version of Flow. The config specifies version 0.22.0 but this is version 0.22.1
-```
-修改.flowconfig,矫正版本号
-
+ 
 ## IOS
 
 ### 环境配置
