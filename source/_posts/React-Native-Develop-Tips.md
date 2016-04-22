@@ -14,10 +14,10 @@ Lastest: React Native v0.22,Xcode 7.2.1
 - [构建 Facebook F8 2016 App / React Native 开发指南](http://f8-app.liaohuqiu.net/)
 - [Redux 英文文档](http://redux.js.org/)
 - [Redux 中文文档](http://camsong.github.io/redux-in-chinese/)
-
+- [一个完整的Flexbox指南](http://www.w3cplus.com/css3/a-guide-to-flexbox.html)
 
 <!--more-->
- 
+
 ## IOS
 
 ### 环境配置

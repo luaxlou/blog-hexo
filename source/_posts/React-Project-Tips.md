@@ -2,10 +2,10 @@
 title: React Project Tips
 date: 2016-03-29 15:27:02
 tags:
-    - nodejs 
-    - webpack 
-    - babel 
-    - react 
+    - node.js 
+    - webpack
+    - babel
+    - react
     - es6
 ---
 
