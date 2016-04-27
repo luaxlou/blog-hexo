@@ -4,8 +4,8 @@
 
 # Site
 title: Good morning,John!
-subtitle: He will be an nodejs Programmer then.
-description: John is an Programmer.nodejs ruby php objective-c java project-management
+subtitle: He will be an Node.js Programmer then.
+description: John is an Programmer.node.js ruby php objective-c java project-management
 author: John Lou
 language: zh-CN
 timezone:
@@ -84,4 +84,4 @@ deploy:
 feed:
   type: atom       #feed 类型 (atom/rss2)
   path: atom.xml   #rss 路径
-  limit: 20 
+  limit: 20
