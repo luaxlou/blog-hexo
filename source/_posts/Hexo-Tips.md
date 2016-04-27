@@ -33,9 +33,18 @@ git push
 
 ### rss生成
 ``` shell
+npm i hexo-generator-feed --save
+
+```
+
+### 使用atom写博客
+
+atom 插件
+
+``` shell
 apm install atom-hexo
 ```
- 
+
 
 more info:[Hexo](https://hexo.io/)
 
