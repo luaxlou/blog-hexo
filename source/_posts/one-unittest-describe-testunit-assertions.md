@@ -12,7 +12,55 @@ tags:
 
 整体来说,感觉不太够用,毕竟这个库比较老.接下去可能会研究下minitest的源码.最后不行的话,可能会自己动手写测试框架.rspec还是算了
 
-{% gist 0becbc05912d7bb5275d703d68e5fff2 test_unit_assertions_test.rb %}
+```ruby
+require 'test/unit'
+
+
+class TestUnitAssertionsTest < Test::Unit::TestCase
+
+  def setup
+
+  end
+
+  def test_assertions
+
+    assert_block "block返回值不正确" do
+      true
+    end
+    assert_equal('Yes', 'Yes')
+    assert 1, '对象不能为false和nil'
+    assert_true true
+    assert_raise '需要抛出一个异常' do
+      raise Exception
+    end
+    assert_nothing_raised '不能抛出异常' do
+      # raise Exception
+    end
+    assert_raise_message "exception" do
+      raise "exception"
+    end
+
+    assert_instance_of String, '', '预期的类型和实际类型不符'
+    assert_nil nil
+    assert_respond_to 'a string', :reverse, '对象预期的方法不存在'
+    assert_match /\d+/, 'five, 6, seven'
+    o = Object.new
+    assert_same o, o
+    assert_empty("")
+    assert_empty([])
+    assert_empty({})
+    assert_path_exist("/tmp")
+
+    flunk '强制断言失败.看到这条失败断言,表示上面所有的断言通过.'
+  end
+
+
+  def teardown
+
+  end
+
+end
+```
 
 
 ```bash
