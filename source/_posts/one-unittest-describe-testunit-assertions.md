@@ -6,12 +6,7 @@ tags:
     - tdd
     - testunit
 ---
-
-``` ruby
-p 'Hello Hexo!!!!!!!!!'
-```
-
-
+ 
 最进使用Ruby测试框架,选择使用 Test::Unit作为测试方法,下面的代码整理了常用的断言语法(其他的可能基本不太可能用上).当然对应的断言语法大多数都有not的反义判断.比如assert_true 和assert_not_true.
 
 整体来说,感觉不太够用,毕竟这个库比较老.接下去可能会研究下minitest的源码.最后不行的话,可能会自己动手写测试框架.rspec还是算了
