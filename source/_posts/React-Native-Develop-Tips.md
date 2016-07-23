@@ -25,7 +25,7 @@ Lastest: React Native v0.22,Xcode 7.2.1
 - ctrl + commond +z 和QQ冲突,关闭
 - ctrl + commond +z 开启 Live Reload
 - 更改NPM源
-```
+``` shell
 $ npm config set registry https://registry.npm.taobao.org
 $ npm config set disturl https://npm.taobao.org/dist
 ```
@@ -36,7 +36,7 @@ $ npm config set disturl https://npm.taobao.org/dist
 ### 发布
 
 - 离线模式打包
-```
+``` shell
 $ rn bundle --platform=ios --entry-file=index.ios.js --bundle-output ios/main.jsbundle
 ```
 - 模拟器下无法使用bundle打包运行

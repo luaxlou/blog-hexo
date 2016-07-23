@@ -12,7 +12,7 @@ tags:
 
 整体来说,感觉不太够用,毕竟这个库比较老.接下去可能会研究下minitest的源码.最后不行的话,可能会自己动手写测试框架.rspec还是算了
 
-```ruby
+``` ruby
 require 'test/unit'
 
 
@@ -63,7 +63,7 @@ end
 ```
 
 
-```bash
+``` bash
 $ ruby assertions_test.rb -v --use-color=true 
 ...
 Started
