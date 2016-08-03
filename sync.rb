@@ -1,8 +1,14 @@
+# 简书同步到Hexo工具
+# Gemfile
+# source 'https://gems.ruby-china.org/'
+#
+# gem 'test-unit'
+# gem "selenium-webdriver"
+# gem 'mechanize'
+#
 require "json"
 require "pp"
-
 require "selenium-webdriver"
-
 require "test/unit"
 require "mechanize"
 
@@ -26,9 +32,9 @@ class TestT < Test::Unit::TestCase
   end
 
 
+  #同步简书到hexo
   def sync
     articles = get_articles
-
 
     #同步jianshu文章到hexo 草稿目录
     articles.each do |a|
@@ -62,7 +68,7 @@ class TestT < Test::Unit::TestCase
 
     articles= getJSON '/writer/notes'
 
-
+    #获得笔记本主要用于给文章打tag
     notebooks = get_notebooks
 
 
@@ -74,7 +80,7 @@ class TestT < Test::Unit::TestCase
 
 
       a['tag'] = notebooks[a['notebook_id']]
-      a['create_time'] = Time.strptime (Time.at(a['last_compiled_at']).to_s),'%F %T'
+      a['create_time'] = Time.strptime (Time.at(a['last_compiled_at']).to_s), '%F %T'
 
     end
 
@@ -83,31 +89,30 @@ class TestT < Test::Unit::TestCase
   end
 
 
-
   def get_article_content id
 
     data = getJSON '/writer/notes/' + (id.to_s) + '/content'
 
-    content =  data['content']
+    content = data['content']
 
-     content.to_s.match /(http:\/\/upload-images.*?)(\?.*?)([")])/ do |m|
-       filename =   File.basename m[1]
+    #搜索文章内的图片下载并替换成本地图片
+    content.to_s.match /(http:\/\/upload-images.*?)(\?.*?)([")])/ do |m|
+      filename = File.basename m[1]
 
-       pathname = HEXO_IMAGE_PATH+'/'+filename
+      pathname = HEXO_IMAGE_PATH+'/'+filename
 
-        image_url = m[1]+m[2]
+      image_url = m[1]+m[2]
 
-       p 'downloading '+image_url+'...'
+      p 'downloading '+image_url+'...'
 
-       @client.download image_url,pathname until File.exists? pathname
+      @client.download image_url, pathname until File.exists? pathname
 
 
-       content.gsub! m[0],"/images/#{filename}#{m[3]}"
+      content.gsub! m[0], "/images/#{filename}#{m[3]}"
 
-     end
-     content
+    end
+    content
   end
-
 
 
   def getJSON uri
@@ -124,6 +129,7 @@ class TestT < Test::Unit::TestCase
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.timeouts.implicit_wait = 30
 
+    #将简书账户密码存储到当前cache目录下,gitignore设为忽略
     account= File.read(ACCOUNT_FILE).split(/ /)
     username = account[0]
     password = account[1]
@@ -144,7 +150,6 @@ class TestT < Test::Unit::TestCase
   end
 
 
-
   def save_cookie
 
     cookies = @driver.manage.all_cookies
@@ -158,6 +163,7 @@ class TestT < Test::Unit::TestCase
       @client.cookie_jar << Mechanize::Cookie.new(c)
     end
 
+    #存储登陆的cookie,以便下次不用重复登陆
     File.write COOKIE_FILE, (JSON cookies)
   end
 
