@@ -116,7 +116,8 @@ class TestT < Test::Unit::TestCase
 
 
   def getJSON uri
-    login if !read_cookie
+    # login if !read_cookie
+    login
     res = @client.get BASE_URL+uri
     if (res.body.include? '/users/password/new') #检测是否cookie已过期
       login
