@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Good night,Geeker!
-subtitle: 晚安,John.
-description: John is an Geeker.
+title: Geeker Life
+subtitle: Good Night,Geeker.
+description: An Geeker's Home.
 author: John Lou
 language: zh-CN
 timezone:
@@ -39,8 +39,8 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
-  auto_detect: false
+  line_number: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -64,7 +64,10 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
-
+theme_config:
+  menu:
+    jianshu: https://www.jianshu.com/u/874f1907d1a6
+    github: https://github.com/luaxlou/
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
