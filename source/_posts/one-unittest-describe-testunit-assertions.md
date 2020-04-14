@@ -1,10 +1,13 @@
 ---
 title: 一个单元测试描述Test::Unit::Assertions语法
 date: 2016-07-23 00:19:47
+categories:
+  - 编程
+  - ruby
 tags:
-    - ruby
-    - tdd
-    - testunit
+  - ruby
+  - tdd
+  - testunit
 ---
 
 最进使用Ruby测试框架,选择使用 Test::Unit作为测试方法,下面的代码整理了常用的断言语法(其他的可能基本不太可能用上).当然对应的断言语法大多数都有not的反义判断.比如assert_true 和assert_not_true.

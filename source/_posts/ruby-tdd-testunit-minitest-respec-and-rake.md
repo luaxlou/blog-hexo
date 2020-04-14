@@ -1,13 +1,16 @@
 ---
 title: Ruby TDD best choice,Test::Unit
 date: 2016-07-10 11:31:03
+categories:
+  - 编程
+  - ruby
 tags:
-    - ruby
-    - tdd
-    - testunit
-    - minitest
-    - rspec
-    - rake
+  - ruby
+  - tdd
+  - testunit
+  - minitest
+  - rspec
+  - rake
 ---
 
 

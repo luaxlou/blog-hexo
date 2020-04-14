@@ -1,8 +1,9 @@
 ---
 title: Hexo Tips
 date: 2016-03-28 00:00:00
+categories: 写作
 tags:
-    - hexo
+  - hexo
 ---
 [Hexo](https://hexo.io/)能有更好的写作体验.
 
