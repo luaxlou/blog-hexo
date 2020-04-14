@@ -15,8 +15,10 @@ p 'Hello Hexo!!!!!!!!!'
 $ npm install hexo-cli -g
 ```
 
+<!--more-->
 
 ### deploy
+
 ``` shell
 # ./d.sh
 hexo g
